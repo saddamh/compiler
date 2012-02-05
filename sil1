@@ -1,16 +1,16 @@
 decl
 	integer factorial(integer n);
 enddecl
-integer factorial (integer n)
+integer factorial ()
 {
 	decl
 		integer rvalue;
 	enddecl
 	begin
-		if(n == 0) then
+		if(n == 1) then
 			rvalue = 1;
 		else
-			rvalue = n * factorial(n-1);
+			rvalue = n*factorial(n-1);
 		endif
 		return rvalue;
 	end
